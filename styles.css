@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /* Format Text */
+  h1 {
+    font-family: "Poppin", sans-serif;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: "Poppin", sans-serif;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+  }
+
+  p {
+    font-family: "Poppin", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    margin: auto;
+  }
+
+  /* Bagian Navigasi Bar */
+  header {
+    font-family: "Poppins", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .logo img {
+    max-width: 100px;
+    border-radius: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+
+  nav ul li :hover{
+    color: #1717D1;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+  }
+  
+  nav ul li a.active{
+    color: #1717D1;
+    border-bottom: 4px solid #797979;
+  }
+  
+  nav ul li a {
+    color: #797979;
+    text-decoration: none;
+    padding: 20px 10px;
+  }
+
+
+  /* Bagian Homepage */
+  .homepage {
+    display: flex;
+    background-image: url('images/background-home.jpg'); 
+    background-size: cover;   
+    background-position: center; 
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px;
+    height: 65vh;
+    }
+
+    .homepage h1 {
+      margin-bottom: 20px;
+      font-size: 3em;
+      font-weight: bold;
+      font-family: "Poppins", sans-serif;
+      color: #242424;
+    } 
+
+    .homepage p {
+      font-size: 1.2em;
+      font-family: "Poppins", sans-serif;
+      color: #242424;
+    }
+
+    /* Bagian Sekilas Tentang Kami */
+    .homepage-about {
+      max-width: 1000px;
+      background-color: #ffffff;
+      color: #242424;
+      margin: 0 auto;
+      padding: 50px;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;  
+    }
+
+    .homepage-about h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;  
+     }
+
+     .homepage-about p {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      }
+
+
+        /* Bagian Visi Misi */
+        .advantages-visimisi {
+          padding: 40px 20px;
+          background-color: #ffffff;
+          text-align: center;
+      }
+      
+      .container-visimisi {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .title-visimisi {
+        font-family: "Poppins", sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+      
+    .advantage {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .advantage-visimisi {
+        flex: 1 1 30%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+    }
+      
+    .advantage-visimisi h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: 550;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .advantage-visimisi p {
+        font-size: 1em;
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+        color: #797979;
+    }
+        
+    /* Bagian Produk Unggulan */
+    .katalog {
+      background-color: #ffffff;
+      text-align: center;
+  }
+  
+  .katalog h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+}
+  
+  .image-row {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      }
+      
+      .image-row img {
+      width: 200px; 
+      height: auto; 
+      margin-right: 50px;
+      transition: transform 0.3s;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      .image-row img:hover {
+      transform: scale(1.1);
+      }  
+
+
+      /* Bagian Keunggulan Produk */
+      .advantages-section {
+        padding: 40px 20px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .title {
+        font-family: "Poppins", sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .subtitle {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        font-family: "Poppins", sans-serif;
+      }
+    
+    .advantages {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .advantage-item {
+        flex: 1 1 30%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    
+    .advantage-item img {
+        max-width: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .advantage-item h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: 550;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .advantage-item p {
+        font-size: 1em;
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+        color: #797979;
+    }
+
+    /* Bagian Whatsapp Float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+
+    /* Bagian Footer */
+  footer {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-links {
+      margin-bottom: 30px;
+  }
+  
+  .footer-links a {
+      color: white;
+      font-family: "Poppins", sans-serif;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+      color: #1717D1;
+  }
+  
+  .footer-copy {
+      font-size: 0.9em;
+  }
+
+/* Tampilan device handphone kecil (<600px)*/
+@media only screen and (max-width: 600px) {
+  
+  /* Navigasi Bar */
+  header {
+    padding: 10px;
+    margin: auto;
+}
+
+.logo img {
+  display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul li {
+    display: block;
+    font-size: 0.8em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #242424;
+    padding: 10px 15px;
+    width: 100%;
+    display: block;
+}
+
+/* Bagian Homepage */
+.homepage {
+  display: flex;
+  background-image: url('background-home.jpg'); 
+  background-size: cover;   
+  background-position: center; 
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+  height: 65vh;
+  }
+
+  .homepage h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #242424;
+  } 
+
+  .homepage p {
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: #242424;
+  }
+
+  /* Bagian Sekilas Tentang Kami */
+  .homepage-about {
+    background-color: #ffffff;
+    color: #242424;
+    margin: 0 auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;  
+  }
+
+  .homepage-about h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;  
+    }
+
+    .homepage-about p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    }
+  
+   /* Bagian Produk Unggulan */
+    .katalog {
+      background-color: #ffffff;
+      text-align: center;
+  }
+
+  .katalog h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .image-row {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      }
+      
+      .image-row img {
+      width: 150px; 
+      margin: auto;
+      height: auto; 
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+}
+
+/* Tampilan device tablet, handphone besar (>600px) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Tampilan device tablet (>768px) */
+@media only screen and (min-width: 768px) {
+
+}
+
+
